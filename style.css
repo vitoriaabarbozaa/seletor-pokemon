@@ -26,7 +26,7 @@ padding:20px;
 width:100%;
 max-width:400px;
 padding:20px;
-display:flex; /*transforma o container em um flex container*/
+display:flex; /* transforma o container em um flex container */
 flex-direction:column; /* define a direção dos itens dentro do flex container um em cima do outro */
 gap:20px; /* espaçamento entre os itens */
 align-items:center;
