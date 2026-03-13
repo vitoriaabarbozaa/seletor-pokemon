@@ -87,9 +87,9 @@ Habilidades: ${habilidades}
 ${stats}
 </div>
 
-<audio controls src="${pokemon.cries.latest}"></audio>
+<audio controls src="${pokemon.cries.latest}"></audio> 
 
 </div>
 `;
-
+/* audio eh a tag html pra add audio, controls add os botoes de play pause e volume, src eh o caminho pro audio da api */
 }
