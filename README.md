@@ -1,7 +1,7 @@
 # Sorteio Pokémon
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Status-Em%20andamento-yellow" alt="Status do Projeto: Em andamento"><br>
+  <img src="https://img.shields.io/badge/Status-Concluído-green" alt="Status do Projeto: Concluído"><br>
   <progress value="85" max="100"></progress>
 </p>
 
