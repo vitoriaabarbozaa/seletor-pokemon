@@ -1,29 +1,29 @@
 * {
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
 }
 
 body {
-background:#1d2c5e;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-min-height:100vh; /* ocupa uma altura mínima de 100% da viewport */
-color:#ffffff;
+  background:#1d2c5e;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  color:#ffffff;
 }
 
 header {
-background:#224ede;
-color:white;
-width:100%;
-text-align:center;
-padding:25px;
-font-size:20px;
-letter-spacing:1px;
-box-shadow:0 3px 8px rgba(0,0,0,0.3);
+  background:#224ede;
+  color:white;
+  width:100%;
+  text-align:center;
+  padding:25px;
+  font-size:20px;
+  letter-spacing:1px;
+  box-shadow:0 3px 8px rgba(0,0,0,0.3);
 }
 
 .card-inicial {
@@ -45,97 +45,106 @@ box-shadow:0 3px 8px rgba(0,0,0,0.3);
 }
 
 .container {
-width:100%;
-max-width:400px;
-padding:20px;
-display:flex; /* transforma o container em um flex container */
-flex-direction:column; /* define a direção dos itens dentro do flex container um em cima do outro */
-gap:20px; /* espaçamento entre os itens */
-align-items:center;
+  width:100%;
+  max-width:400px;
+  padding:20px;
+  display:flex; 
+  flex-direction:column; 
+  gap:20px; 
+  align-items:center;
 }
 
 button {
-background:#ffcb05;
-color:#2a2a2a;
-border:none;
-padding:14px;
-border-radius:8px;
-cursor:pointer;
-width:100%;
-font-size:16px;
-font-weight:bold;
-transition: all 0.2s ease;
+  background:#ffcb05;
+  color:#2a2a2a;
+  border:none;
+  padding:14px;
+  border-radius:8px;
+  cursor:pointer;
+  width:100%;
+  font-size:16px;
+  font-weight:bold;
+  transition: all 0.2s ease;
 }
 
 button:hover {
-background:#e6b604;
-transform: translateY(-2px);
+  background:#e6b604;
+  transform: translateY(-2px);
 }
 
 button:active {
-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+.botao-voltar {
+  background: #e3350d;
+  color: #ffffff;
+}
+
+.botao-voltar:hover {
+  background: #b32a0a;
 }
 
 .card {
-background:#2a2a2a;
-padding:25px;
-border-radius:12px;
-width:100%;
-text-align:center;
-box-shadow:0 6px 16px rgba(0,0,0,0.4);
-animation: aparecer 0.3s ease;
+  background:#2a2a2a;
+  padding:25px;
+  border-radius:12px;
+  width:100%;
+  text-align:center;
+  box-shadow:0 6px 16px rgba(0,0,0,0.4);
+  animation: aparecer 0.3s ease;
 }
 
 .card img {
-width:180px;
-margin-bottom:10px;
+  width:180px;
+  margin-bottom:10px;
 }
 
 .types {
-margin:10px 0;
+  margin:10px 0;
 }
 
 .type {
-background:#555;
-color:white;
-padding:4px 10px;
-border-radius:12px;
-font-size:12px;
-margin:3px;
-display:inline-block;
-text-transform:capitalize;
+  background:#555;
+  color:white;
+  padding:4px 10px;
+  border-radius:12px;
+  font-size:12px;
+  margin:3px;
+  display:inline-block;
+  text-transform:capitalize;
 }
 
 .info {
-font-size:14px;
-margin:10px 0;
+  font-size:14px;
+  margin:10px 0;
 }
 
 .stats {
-text-align:left;
-font-size:13px;
-margin-top:10px;
+  text-align:left;
+  font-size:13px;
+  margin-top:10px;
 }
 
 .stats div {
-display:flex;
-justify-content:space-between; /* como os itens se distribuem dentro do container */
-border-bottom:1px solid #eee;
-padding:3px 0;
+  display:flex;
+  justify-content:space-between; 
+  border-bottom:1px solid #eee;
+  padding:3px 0;
 }
 
 audio {
-margin-top:10px;
-width:100%;
+  margin-top:10px;
+  width:100%;
 }
 
 @keyframes aparecer {
-from {
-opacity:0;
-transform:translateY(10px);
-}
-to {
-opacity:1;
-transform:translateY(0);
-}
+  from {
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
 }
