@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seletor Pokémon</title>
-<meta name="description" content="Projeto de um seletor de Pokémon aleatório desenvolvido consumindo a PokéAPI.">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletor Pokémon</title>
+  <meta name="description" content="Projeto de um seletor de Pokémon aleatório desenvolvido consumindo a PokéAPI.">
+  
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icon-192x192.png">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h1>Descubra qual é o seu Pokémon</h1>
-</header>
+  <header>
+    <h1>Descubra qual é o seu Pokémon</h1>
+  </header>
 
-<main class="container">
+  <main class="container">
+    
+    <button id="btn-voltar" class="botao-voltar" style="display: none;">Voltar ao Início</button>
 
-<div id="pokemon-container"></div>
+    <div id="pokemon-container"></div>
 
-<div class="card-inicial">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1920px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon logo" loading="lazy" class="imagem-inicial">
+    <div class="card-inicial" id="card-inicial">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1920px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon logo" loading="lazy" class="imagem-inicial">
+      
+      <p class="texto-inicial">Clique no botão para gerar um Pokémon.</p>
+      
+      <button id="btn-gerar" class="botao-gerar">Gerar Pokémon</button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
   
-  <p class="texto-inicial">Clique no botão para sortear um Pokémon.</p>
-  
-  <button id="btn-sortear" class="botao-sortear">Sortear Pokémon</button>
-</div>
-
-</main>
-
-<script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/seletor-pokemon/sw.js')
+          .then(registration => console.log('Service Worker registado com sucesso!'))
+          .catch(error => console.log('Falha ao registar o Service Worker:', error));
+      });
+    }
+  </script>
 </body>
 </html>
